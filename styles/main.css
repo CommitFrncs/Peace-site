@@ -1,0 +1,281 @@
+/* ─────────────────────────────────────────
+    PEACESTYLES — main.css
+   ───────────────────────────────────────── */
+
+/* ── VARIABLES ── */
+:root {
+    /* Colors */
+    --primary:  #2D1B2E;               /* deep plum — nav, headings */
+    --secondary: #C9A84C;              /* gold — accents, CTAs */
+    --accent: #FAF7F2;                 /* cream — light backgrounds */
+    --light: #ffffff;
+    --dark: #111111;
+    --muted: #6B6B6B;                  /* grey — subtext, captions */
+    --surface: #F3EEF4;                /* light plum tint — section bg */
+    --border: #E0D6E1;                 /* subtle borders and dividers */
+    --overlay: rgba(45, 27, 46, 0.65); /* hero image overlay */
+    --hover: #B8922E;                  /* darker gold — hover states */
+    --btn-text: #ffffff;               /* text on gold/plum buttons */
+
+    /* Fonts */
+    --font-display: 'Imperial Script', cursive;  /* logo, decorative */
+    --font-heading: 'Montserrat', sans-serif;     /* h1, h2, h3 */
+    --font-body: 'Montserrat', sans-serif;        /* body text, nav */
+
+    /* Font Weights */
+    --fw-light:    300;
+    --fw-regular:  400;
+    --fw-medium:   500;
+    --fw-semibold: 600;
+    --fw-bold:     700;
+    --fw-black:    900;
+}
+
+/* ── RESET ── */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ── BASE ── */
+body {
+    font-family: var(--font-body);
+    font-weight: var(--fw-regular);
+    background-color: var(--light);
+    color: var(--dark);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: var(--font-display);
+    font-weight: var(--fw-light);
+}
+
+
+h2 {
+    font-family: var(--font-display);
+    font-weight: var(--fw-bold);
+}
+h3 {
+    font-family: var(--font-heading);
+    font-weight: var(--fw-bold);
+    letter-spacing: 0.5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* ── LAYOUT ── */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.section {
+    padding: 5rem 0;
+}
+
+/* ── HEADER & NAV ── */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: var(--primary);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo {
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    color: var(--accent);
+}
+
+.nav-logo :hover {
+    color: var(--secondary);
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.main-nav a {
+    font-family: var(--font-body);
+    font-weight: var(--fw-medium);
+    font-size: 0.9rem;
+    color: var(--accent);
+    letter-spacing: 0.5px;
+    transition: color 0.2s ease;
+}
+
+.main-nav a:hover {
+    color: var(--secondary);
+}
+
+.main-nav a.active {
+    color: var(--secondary);
+}
+
+/* ── BUTTONS ── */
+.book-btn {
+    display: inline-block;
+    background: var(--secondary);
+    color: var(--btn-text);
+    font-family: var(--font-body);
+    font-weight: var(--fw-semibold);
+    font-size: 0.95rem;
+    padding: 0.8rem 2rem;
+    border-radius: 4px;
+    margin-top: 1.5rem;
+    transition: background 0.2s ease;
+}
+
+.book-btn:hover {
+    background: var(--hover);
+}
+
+/* ── HERO ── */
+#hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 8rem 1.5rem 4rem;
+    background: linear-gradient(
+        to top,
+        rgba(45, 27, 46, 0.384) 40%,
+        rgba(45, 27, 46, 0) 100%
+        ),
+        url('../assets/images/hero-bg.jpg') no-repeat center center / cover;
+}
+
+#hero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#hero h1 {
+    color: var(--accent);
+    font-size: 3.2rem;
+    line-height: 1.2;
+    max-width: 700px;
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    color: var(--accent);
+    font-size: 1.1rem;
+    max-width: 520px;
+    opacity: 0.85;
+}
+
+/* ── ABOUT ── */
+.about {
+    background: var(--surface);
+    position: relative;
+    overflow: hidden;
+    position: relative;
+    background: var(--surface) url('../assets/images/about-decor.svg') no-repeat center center / cover;
+}
+
+.about-card {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    background: var(--accent);
+    padding: 3rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.about-img {
+    flex: 1;
+    min-height: 420px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.about-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.about-p {
+    flex: 1;
+}
+
+.about-p h2 {
+    font-size: 2.2rem;
+    color: var(--primary);
+    display: inline-block;
+    border-bottom: 3px solid var(--secondary);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.2rem;
+}
+
+.about-p p {
+    color: var(--muted);
+    font-size: 1rem;
+    line-height: 1.9;
+    text-align: left;
+}
+
+/* ── GALLERY ── */
+.gallery {
+    background: var(--light);
+}
+
+.gallery h2 {
+    font-size: 2.2rem;
+    color: var(--primary);
+    display: inline-block;
+    border-bottom: 3px solid var(--secondary);
+    padding-bottom: 0.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.gallery-grid {
+  width: 100%;
+}
+
+.gallery-sizer,
+.gallery-item {
+  width: 31%;
+}
+
+.gallery-item {
+  margin-bottom: 2%;
+}
+
+.gallery-item img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+}

@@ -1,0 +1,140 @@
+<svg width="1200" height="600" viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
+<style>
+.g { fill:none; stroke:#C9A84C; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; opacity:0.45; }
+.p { fill:none; stroke:#2D1B2E; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; opacity:0.38; }
+</style>
+
+<!-- TOP LEFT: Comb -->
+<g transform="translate(60,40) rotate(-35)">
+  <rect class="g" x="0" y="0" width="72" height="16" rx="4"/>
+  <line class="g" x1="10" y1="16" x2="10" y2="34"/>
+  <line class="g" x1="20" y1="16" x2="20" y2="34"/>
+  <line class="g" x1="30" y1="16" x2="30" y2="34"/>
+  <line class="g" x1="40" y1="16" x2="40" y2="34"/>
+  <line class="g" x1="50" y1="16" x2="50" y2="34"/>
+  <line class="g" x1="60" y1="16" x2="60" y2="34"/>
+</g>
+
+<!-- TOP LEFT: Nail polish -->
+<g transform="translate(180,30) rotate(20)">
+  <rect class="p" x="6" y="24" width="24" height="40" rx="5"/>
+  <rect class="p" x="10" y="10" width="16" height="16" rx="3"/>
+  <rect class="p" x="14" y="2" width="8" height="10" rx="2"/>
+  <line class="p" x1="10" y1="38" x2="30" y2="38"/>
+</g>
+
+<!-- TOP CENTER: Scissors -->
+<g transform="translate(490,15) rotate(-20)">
+  <circle class="g" cx="10" cy="10" r="9"/>
+  <circle class="g" cx="36" cy="10" r="9"/>
+  <line class="g" x1="17" y1="17" x2="52" y2="62"/>
+  <line class="g" x1="29" y1="17" x2="0" y2="62"/>
+</g>
+
+<!-- TOP RIGHT: Spray bottle -->
+<g transform="translate(980,20) rotate(25)">
+  <rect class="g" x="12" y="26" width="34" height="48" rx="5"/>
+  <rect class="g" x="20" y="10" width="18" height="18" rx="3"/>
+  <line class="g" x1="12" y1="46" x2="0" y2="46"/>
+  <line class="g" x1="0" y1="46" x2="0" y2="36"/>
+  <line class="g" x1="0" y1="36" x2="12" y2="36"/>
+  <circle class="g" cx="29" cy="52" r="5"/>
+</g>
+
+<!-- TOP FAR RIGHT: Comb -->
+<g transform="translate(1110,60) rotate(50)">
+  <rect class="p" x="0" y="0" width="70" height="16" rx="4"/>
+  <line class="p" x1="10" y1="16" x2="10" y2="34"/>
+  <line class="p" x1="20" y1="16" x2="20" y2="34"/>
+  <line class="p" x1="30" y1="16" x2="30" y2="34"/>
+  <line class="p" x1="40" y1="16" x2="40" y2="34"/>
+  <line class="p" x1="50" y1="16" x2="50" y2="34"/>
+  <line class="p" x1="60" y1="16" x2="60" y2="34"/>
+</g>
+
+<!-- LEFT CENTER: Mannequin head -->
+<g transform="translate(28,230) rotate(15)">
+  <ellipse class="p" cx="34" cy="36" rx="28" ry="32"/>
+  <ellipse class="p" cx="34" cy="68" rx="12" ry="6"/>
+  <line class="p" x1="34" y1="74" x2="34" y2="86"/>
+  <line class="p" x1="18" y1="86" x2="50" y2="86"/>
+  <line class="p" x1="16" y1="28" x2="52" y2="28"/>
+  <line class="p" x1="18" y1="40" x2="50" y2="40"/>
+</g>
+
+<!-- LEFT LOWER: Hair dryer -->
+<g transform="translate(130,380) rotate(-20)">
+  <ellipse class="g" cx="26" cy="22" rx="24" ry="20"/>
+  <line class="g" x1="50" y1="22" x2="76" y2="22"/>
+  <rect class="g" x="16" y="42" width="20" height="28" rx="5"/>
+  <line class="g" x1="10" y1="8" x2="4" y2="0"/>
+  <line class="g" x1="26" y1="4" x2="26" y2="0"/>
+  <line class="g" x1="42" y1="8" x2="48" y2="0"/>
+</g>
+
+<!-- RIGHT CENTER: Nail polish -->
+<g transform="translate(1120,240) rotate(-30)">
+  <rect class="g" x="6" y="24" width="24" height="40" rx="5"/>
+  <rect class="g" x="10" y="10" width="16" height="16" rx="3"/>
+  <rect class="g" x="14" y="2" width="8" height="10" rx="2"/>
+  <line class="g" x1="10" y1="38" x2="30" y2="38"/>
+</g>
+
+<!-- RIGHT LOWER: Mannequin head -->
+<g transform="translate(1130,390) rotate(-20)">
+  <ellipse class="p" cx="30" cy="32" rx="24" ry="28"/>
+  <ellipse class="p" cx="30" cy="60" rx="10" ry="5"/>
+  <line class="p" x1="30" y1="65" x2="30" y2="75"/>
+  <line class="p" x1="16" y1="75" x2="44" y2="75"/>
+  <line class="p" x1="14" y1="24" x2="46" y2="24"/>
+  <line class="p" x1="16" y1="35" x2="44" y2="35"/>
+</g>
+
+<!-- BOTTOM LEFT: Scissors -->
+<g transform="translate(80,490) rotate(40)">
+  <circle class="p" cx="10" cy="10" r="9"/>
+  <circle class="p" cx="36" cy="10" r="9"/>
+  <line class="p" x1="17" y1="17" x2="52" y2="62"/>
+  <line class="p" x1="29" y1="17" x2="0" y2="62"/>
+</g>
+
+<!-- BOTTOM CENTER: Spray bottle -->
+<g transform="translate(380,490) rotate(-15)">
+  <rect class="g" x="12" y="26" width="34" height="48" rx="5"/>
+  <rect class="g" x="20" y="10" width="18" height="18" rx="3"/>
+  <line class="g" x1="12" y1="46" x2="0" y2="46"/>
+  <line class="g" x1="0" y1="46" x2="0" y2="36"/>
+  <line class="g" x1="0" y1="36" x2="12" y2="36"/>
+  <circle class="g" cx="29" cy="52" r="5"/>
+</g>
+
+<!-- BOTTOM CENTER: Comb -->
+<g transform="translate(560,510) rotate(10)">
+  <rect class="p" x="0" y="0" width="72" height="16" rx="4"/>
+  <line class="p" x1="10" y1="16" x2="10" y2="34"/>
+  <line class="p" x1="20" y1="16" x2="20" y2="34"/>
+  <line class="p" x1="30" y1="16" x2="30" y2="34"/>
+  <line class="p" x1="40" y1="16" x2="40" y2="34"/>
+  <line class="p" x1="50" y1="16" x2="50" y2="34"/>
+  <line class="p" x1="60" y1="16" x2="60" y2="34"/>
+</g>
+
+<!-- BOTTOM RIGHT: Hair dryer -->
+<g transform="translate(920,460) rotate(30)">
+  <ellipse class="g" cx="26" cy="22" rx="24" ry="20"/>
+  <line class="g" x1="50" y1="22" x2="76" y2="22"/>
+  <rect class="g" x="16" y="42" width="20" height="28" rx="5"/>
+  <line class="g" x1="10" y1="8" x2="4" y2="0"/>
+  <line class="g" x1="26" y1="4" x2="26" y2="0"/>
+  <line class="g" x1="42" y1="8" x2="48" y2="0"/>
+</g>
+
+<!-- BOTTOM FAR RIGHT: Scissors -->
+<g transform="translate(1090,490) rotate(-45)">
+  <circle class="p" cx="10" cy="10" r="9"/>
+  <circle class="p" cx="36" cy="10" r="9"/>
+  <line class="p" x1="17" y1="17" x2="52" y2="62"/>
+  <line class="p" x1="29" y1="17" x2="0" y2="62"/>
+</g>
+
+</svg>
